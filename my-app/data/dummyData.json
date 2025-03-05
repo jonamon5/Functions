@@ -1,0 +1,67 @@
+{
+	"date": "2025-03-01",
+	"totalSleepTime": 400,
+	"minuteData": [
+	  {
+		"minute": "00:01",
+		"pressure": 7.5,
+		"breathingRate": 12,
+		"leakRate": 1.2,
+		"flowLimit": 5,
+		"snore": 0,
+		"spO2": 96,
+		"pulseRate": 60,
+		"movement": false,
+		"sleepStage": "light"
+	  },
+	  {
+		"minute": "00:02",
+		"pressure": 7.5,
+		"breathingRate": 12,
+		"leakRate": 1.3,
+		"flowLimit": 5,
+		"snore": 2,
+		"spO2": 95,
+		"pulseRate": 61,
+		"movement": false,
+		"sleepStage": "light"
+	  },
+	  {
+		"minute": "00:03",
+		"pressure": 7.6,
+		"breathingRate": 11,
+		"leakRate": 1.1,
+		"flowLimit": 5,
+		"snore": 1,
+		"spO2": 96,
+		"pulseRate": 60,
+		"movement": true,
+		"sleepStage": "light"
+	  },
+	  {
+		"minute": "00:04",
+		"pressure": 7.6,
+		"breathingRate": 12,
+		"leakRate": 1.2,
+		"flowLimit": 5,
+		"snore": 0,
+		"spO2": 97,
+		"pulseRate": 59,
+		"movement": false,
+		"sleepStage": "deep"
+	  },
+	  {
+		"minute": "00:05",
+		"pressure": 7.5,
+		"breathingRate": 13,
+		"leakRate": 1.4,
+		"flowLimit": 5,
+		"snore": 3,
+		"spO2": 95,
+		"pulseRate": 62,
+		"movement": true,
+		"sleepStage": "REM"
+	  }
+	]
+  }
+  
