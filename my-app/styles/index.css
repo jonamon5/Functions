@@ -1,0 +1,48 @@
+body {
+	margin: 1rem
+}
+.title {
+	font-size: 2.5rem;
+}
+
+.core-stats-section {
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.ahi, .pressure, .leak-rate, .usage {
+	padding: 1rem;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: fit-content;
+}
+
+.ahi {
+	background-color: lightblue;
+}
+
+.pressure {
+	background-color: lightgreen;
+}
+
+.leak-rate {
+	background-color: lightcoral;
+}
+
+.usage {
+	background-color: lightgoldenrodyellow;
+}
+
+
+.stats-title {
+	font-size: 1rem;
+}
+
+.stats {
+	font-size: 2rem;
+	font-weight: bold;
+}
