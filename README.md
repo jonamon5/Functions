@@ -4,6 +4,6 @@ Sleep apnea and CPAP therapy applications either provide too little or much data
 
 Languages: HTML, CSS, JavaScript
 
-Frameworks: React
+Frameworks: React.JS
 
-API: OpenAI and SleepHQ
+API: OpenAI and SleepHQ (Maybe)
