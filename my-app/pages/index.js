@@ -8,8 +8,11 @@ export default function Home() {
   return (
 
     <div>
-      <h1 className="title">SleepVantage</h1>
-      <p>SleepVantage is a smart sleep apnea assistant that provides actionable insights for you, improving your CPAP therapy </p>
+
+      <div className='header'>
+        <h1 className="title">SleepVantage</h1>
+        <p>SleepVantage is a smart sleep apnea assistant that provides actionable insights for you, improving your CPAP therapy </p>
+      </div>
 
       <div className='core-stats-section'>
 
