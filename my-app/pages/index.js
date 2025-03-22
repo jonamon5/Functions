@@ -1,10 +1,30 @@
 import dummyData from '../data/dummyData.json';
+import axios from 'axios';
 
-export default function Home() {
+// API GET REQUEST FOR CURRENT USER DATA
+export async function getServerSideProps() {
+  const response = await axios.get('https://sleephq.com/api/v1/me', {
+    headers: {
+      'accept': 'application/vnd.api+json',
+      'authorization': 'Bearer r5edXo23zXY1DrS_yUjLREz0Jiu66PKYFHuEdua0pY4'
+    }
+  });
+
+  const userData = response.data;
+  console.log('userData', userData);
+
+  return {
+    props: { userData } // Return userData as a prop
+  };
+}
+
+// DISPLAY DATA ON HOME PAGE 
+export default function Home({ userData }) {
+
+  console.log('userData', userData.data);
 
   const data = dummyData;
-  console.log("data", data);
-
+ 
   return (
 
     <div>
