@@ -1,15 +1,25 @@
-import dummyData from '../data/dummyData.json';
+import dummyData from '../data/all_dates.json';
 import axios from 'axios';
 
 // FFETCH MACHINE DATA
 async function fetchMachineDates() {
-  const response = await axios.get('https://sleephq.com/api/v1/machines/47720/machine_dates?sort_order=desc&page=1&per_page=100', {
-    headers: {
-      'accept': 'application/vnd.api+json',
-      'authorization': 'Bearer r5edXo23zXY1DrS_yUjLREz0Jiu66PKYFHuEdua0pY4'
+  try {
+
+    const response = await axios.get('https://sleephq.com/api/v1/machines/47720/machine_dates?sort_order=desc&page=1&per_page=100', {
+      headers: {
+        'accept': 'application/vnd.api+json',
+        'authorization': `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
+      }
+    });
+    return response.data;
+
+  } catch (error) {
+    if (error.response) {
+      console.error('Error response data:', error.response.data);
+      console.error('Error response status:', error.response.status);
     }
-  });
-  return response.data;
+    return dummyData;
+  }
 }
 
 // API GET REQUEST FOR MACHINE DATES
