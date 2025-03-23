@@ -23,7 +23,7 @@ async function fetchMachineDates() {
 }
 
 // API GET REQUEST FOR MACHINE DATES
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const machineDatesData = await fetchMachineDates();
 
   console.log('machineDatesData', machineDatesData);
